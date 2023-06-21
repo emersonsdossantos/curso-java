@@ -10,6 +10,9 @@ public class Pessoa {
 		this.peso = peso;
 	}
 	void comer(Comida comida) {
-		peso += comida.pesoComida;
+		if(comida != null) {
+			peso += comida.pesoComida;
+		}
+		
 	}
 }
